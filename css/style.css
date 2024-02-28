@@ -1,0 +1,427 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #d9f6e5;
+  background: url(../slike/image.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+@font-face {
+  font-family: MojFont;
+  src: url("../font/fabada/Fabada-regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "MojFont", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #ffffff;
+}
+
+header {
+  width: 100%;
+}
+header .header-wrap {
+  background-image: linear-gradient(lightgreen, yellowgreen, black);
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.navigacija {
+  display: flex;
+  align-items: center;
+}
+
+.navigacija li {
+  border-bottom: 5px solid;
+  font-size: 25px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: greenyellow;
+  list-style-type: none;
+}
+
+.navigacija li a {
+  text-decoration: none;
+}
+
+.navigacija ul {
+  display: flex;
+}
+
+.navigacija a:hover {
+  color: crimson;
+}
+
+.image-wrap img {
+  width: 120px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  width: 90%;
+  margin: 0 auto;
+  background-color: black;
+  text-align: center;
+}
+
+.around-main {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 100%;
+}
+
+main {
+  margin-top: 220px;
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+}
+
+.main img {
+  width: 300px;
+  height: 500px;
+}
+
+.slika-tekst {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.slika2 {
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.futer{
+  width: 100%;
+  background-color: rgb(57, 48, 48);
+  text-align: center;
+}
+
+.futer i{
+  font-size: 25px;
+  padding: 5px 15px;
+}
+
+.futer i:hover{
+  color: gray;
+}
+
+.aboutmetext {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#info {
+  font-size: 30px;
+}
+
+#about {
+  margin-bottom: 20px;
+}
+
+.blok {
+  border: 1px solid black;
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.blok i {
+  font-size: 200px;
+  color: black;
+}
+
+.skills {
+  display: flex;
+  align-items: baseline;
+}
+
+.header-info h1 {
+  font-size: 4rem;
+  color: chartreuse;
+  margin-left: 300px;
+  margin-top: 200px;
+}
+
+.header-info h2 {
+  font-size: 3rem;
+  font-style: oblique;
+  margin-top: 40px;
+  margin-left: 900px;
+}
+
+.header-buttons {
+  text-align: center;
+}
+
+.header-buttons input {
+  font-size: 50px;
+  border-radius: 10px;
+  border: none;
+  margin: 20px;
+  margin-top: 60px;
+  background-color: black;
+  width: 300px;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+#drugabojadugme {
+  background-color: white;
+  color: black;
+  height: 60px;
+}
+
+#drugabojadugme:hover {
+  background-color: black;
+  color: white;
+}
+
+#prvabojadugme:hover {
+  background-color: white;
+  color: black;
+}
+
+#prvabojadugme{
+  height: 60px;
+}
+
+#linija {
+  margin: 30px;
+}
+
+#naslov-servisi {
+  text-align: center;
+}
+
+.projects {
+  background-color: rgb(77, 77, 77);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+
+.first img {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  border: 1px solid lime;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.prva-slika-tekst {
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.first:hover .image {
+  opacity: 0.3;
+}
+
+.first:hover .prva-slika-tekst {
+  opacity: 1;
+}
+
+.prvi-tekst p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -150px;
+  margin-left: 500px;
+}
+
+.second img {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  border: 1px solid lime;
+  margin-left: -150px;
+  margin-right: 30px;
+}
+
+.second:hover .image {
+  opacity: 0.3;
+}
+
+.second:hover .druga-slika-tekst {
+  opacity: 1;
+}
+
+.drugi-tekst p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -170px;
+  margin-left: -170px;
+}
+
+.third img {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  border: 1px solid lime;
+}
+
+.treca-slika-tekst {
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  margin-left: 250px;
+}
+
+.third:hover .image {
+  opacity: 0.3;
+}
+
+.third:hover .treca-slika-tekst {
+  opacity: 1;
+}
+
+.treci-tekst p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: -150px;
+}
+
+#naslov-projekat {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#contact {
+  background-color: rgb(77, 77, 77);
+  width: 50%;
+}
+
+.forma-poruka textarea {
+  border-radius: 10px;
+  resize: none;
+  background-color: #f9f7f7;
+  color: black;
+}
+
+.projects {
+  display: flex;
+}
+
+.formular {
+  background-color: rgb(40, 40, 40);
+  padding: 30px;
+  border-radius: 20px;
+}
+
+input {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  width: 300px;
+  height: 50px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+}
+
+input::-moz-placeholder {
+  font-size: 20px;
+}
+
+input::placeholder {
+  font-size: 20px;
+}
+
+.imeprezime {
+  margin: 20px;
+}
+
+#name {
+  margin: 20px;
+  margin-right: 200px;
+}
+
+#email {
+  margin: 0 auto;
+  display: grid;
+}
+
+textarea {
+  padding: 20px;
+  width: 100%;
+}
+
+.naslov-contact h2 {
+  text-align: center;
+}
+
+#kontant-naslov {
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+}/*# sourceMappingURL=style.css.map */
+
+#send{
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 20px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+}
+
+#send:hover{
+  opacity: 0.7;
+  background-color: transparent;
+  transition: 0.5s all ease-in-out;
+}
+
+.forma-dugme{
+  text-align: center;
+}
+
+.prvi-blok iframe{
+  width: 500px;
+  height: 350px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.map{
+  width: auto;
+  padding: 0px;
+}
+
+.telefon{
+  font-size: 30px;
+  text-align: center;
+}
