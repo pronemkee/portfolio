@@ -409,3 +409,291 @@ textarea{
 	}
 }
 }
+
+@media screen and (max-width: 1460px) {
+	main .skills{
+	  display: block;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	.projects{
+	  flex-direction: column;
+	  align-items: center;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .second{
+	  margin-top: 150px;
+	  margin-bottom: 170px;
+	  margin-left: 30px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .second img{
+	  margin-left: 0px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .second .druga-slika-tekst .drugi-tekst p{
+	  margin-left: -20px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .first .image{
+	  display: inline-block;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .first{
+	  text-align: center;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .first:hover .prva-slika-tekst{
+	  margin-left: 150px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .third{
+	  margin-left: 40px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .map{
+	  margin-top: 50px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects .map .prvi-blok iframe{
+	  width: 600px;
+	  height: 400px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects{
+	  padding-bottom: 150px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	header .header-info h2{
+	  margin-left: 700px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	header .header-info h1{
+	  margin-left: 100px;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects #contact .formular #forma form .imeprezime{
+	  display: flex;
+	  justify-content: center;
+	}
+  }
+  
+  @media screen and (max-width: 1460px) {
+	main .projects #contact .formular #forma form .imeprezime #name{
+	  margin: 0;
+	  margin-right: 100px;
+	}
+  }
+  
+  @media screen and (max-width: 769px) {
+	header{
+	  width: 122%;
+	}
+  }
+  
+  @media screen and (max-width: 769px) {
+	.futer{
+	  width: 122%;
+	}
+  }
+  
+  @media screen and (max-width: 769px) {
+	main{
+	  width: 122%;
+	}
+  }
+  
+  @media screen and (max-width: 769px) {
+	header .header-info h2{
+	  margin-left: 500px;
+	}
+  }
+  
+  @media screen and (max-width: 769px) {
+	main .projects .map .prvi-blok iframe{
+	  width: 450px;
+	  height: 300px;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	header{
+	  width: 172%;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	header .header-wrap .container{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	header .header-info h1{
+	  margin-top: 20px;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	header .header-info h2{
+	  margin-left: 300px;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	main{
+	  width: 172%;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	.futer{
+	  width: 172%;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	header .header-info h1{
+	  margin-top: 20px;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	main .projects #contact .formular #forma form .imeprezime #name{
+	  margin-right: 0;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	main .projects .map .prvi-blok iframe{
+	  width: 350px;
+	  height: 300px;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	header .header-buttons input {
+	font-size: 30px;
+	width: 250px;
+	}
+  }
+  
+  @media screen and (max-width: 426px) {
+	main .around-main .main .slika-tekst .slika2 img{
+	  width: auto;
+	  height: 650px;
+	}
+  }
+  
+  @media screen and (max-width: 375px) {
+	main .projects #contact .formular #forma form .forma-mail input{
+	  width: auto;
+	  margin-right: 0;
+	}
+  }
+  
+  @media screen and (max-width: 375px) {
+	main .projects #contact .formular #forma form .forma-dugme input{
+	  width: 90px;
+	  margin-right: 0;
+	}
+  }
+  
+  @media screen and (max-width: 375px) {
+	main .projects #contact .formular #forma form .imeprezime {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	}
+  }
+  
+  @media screen and (max-width: 375px) {
+	main .projects #contact .formular #forma form .imeprezime input{
+	  width: 150px;
+	  margin-right: 0;
+	  margin: 20px;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	header{
+	  width: 189%;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	header .header-wrap .container .navigacija ul{
+	  display: block;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	header .header-wrap .container .navigacija ul li{
+	  text-align: center;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	header .header-wrap .container .navigacija ul li a{
+	  font-size: 40px;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	main{
+	  width: 189%;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	.futer{
+	  width: 189%;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	main .around-main .main .slika-tekst{
+	  flex-direction: column;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	main .around-main .main .slika-tekst .slika2 img{
+	  width: 300px;
+	}
+  }
+  
+  @media screen and (max-width: 321px) {
+	main .projects .map .telefon a{
+	  font-size: 25px;
+	}
+  }
