@@ -36,21 +36,18 @@ header .header-wrap {
   width: 100%;
   z-index: 2;
 }
-header .header-wrap .container .image-wrap {
+header .header-wrap .container {
   display: flex;
   justify-content: space-around;
 }
-header .header-wrap .container .image-wrap img {
-  width: 120px;
-}
-header .header-wrap .container .image-wrap .navigacija {
+header .header-wrap .container .navigacija {
   display: flex;
   align-items: center;
 }
-header .header-wrap .container .image-wrap .navigacija ul {
+header .header-wrap .container .navigacija ul {
   display: flex;
 }
-header .header-wrap .container .image-wrap .navigacija ul li {
+header .header-wrap .container .navigacija ul li {
   border-bottom: 5px solid;
   font-size: 25px;
   margin: 0 15px;
@@ -58,28 +55,35 @@ header .header-wrap .container .image-wrap .navigacija ul li {
   color: greenyellow;
   list-style-type: none;
 }
-header .header-wrap .container .image-wrap .navigacija ul li a {
+header .header-wrap .container .navigacija ul li a {
   text-decoration: none;
 }
-header .header-wrap .container .image-wrap .navigacija ul li a:hover {
+header .header-wrap .container .navigacija ul li a:hover {
   color: crimson;
 }
-header .header-info h1 {
+header .header-wrap .container .image-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+header .header-wrap .container .image-wrap img {
+  width: 120px;
+}
+header .header-wrap .header-info h1 {
   font-size: 4rem;
   color: chartreuse;
   margin-left: 300px;
   margin-top: 200px;
 }
-header .header-info h2 {
+header .header-wrap .header-info h2 {
   font-size: 3rem;
   font-style: oblique;
   margin-top: 40px;
   margin-left: 900px;
 }
-header .header-buttons {
+header .header-wrap .header-buttons {
   text-align: center;
 }
-header .header-buttons input {
+header .header-wrap .header-buttons input {
   font-size: 50px;
   border-radius: 10px;
   border: none;
@@ -90,91 +94,90 @@ header .header-buttons input {
   cursor: pointer;
   transition: 0.5s all;
 }
-header .header-buttons #prvabojadugme:hover {
+header .header-wrap .header-buttons #prvabojadugme:hover {
   background-color: white;
   color: black;
 }
-header .header-buttons #drugabojadugme {
+header .header-wrap .header-buttons #drugabojadugme {
   background-color: white;
   color: black;
 }
-header .header-buttons #drugabojadugme:hover {
+header .header-wrap .header-buttons #drugabojadugme:hover {
   background-color: black;
   color: white;
 }
-
-main {
+header main {
   margin-top: 220px;
   width: 100%;
   background-color: rgb(77, 77, 77);
 }
-main #linija {
+header main #linija {
   margin: 30px;
 }
-main #kontant-naslov {
+header main #kontant-naslov {
   text-align: center;
   font-size: 32px;
   padding: 10px;
 }
-main #about {
+header main #about {
   margin-bottom: 20px;
 }
-main .around-main {
+header main .around-main {
   padding-bottom: 20px;
   padding-top: 20px;
   width: 100%;
 }
-main .around-main .main {
+header main .around-main .main {
   width: 90%;
   margin: 0 auto;
   background-color: black;
   text-align: center;
 }
-main .around-main .main .slika-tekst {
+header main .around-main .main .slika-tekst {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   margin: 0 auto;
   align-items: center;
 }
-main .around-main .main .slika-tekst .aboutmetext {
+header main .around-main .main .slika-tekst .aboutmetext {
   margin-left: 50px;
   margin-right: 50px;
 }
-main .around-main .main .slika-tekst .slika2 {
+header main .around-main .main .slika-tekst .slika2 {
   padding-left: 20px;
   padding-bottom: 30px;
 }
-main .around-main .main .slika-tekst .slika2 img {
+header main .around-main .main .slika-tekst .slika2 img {
   width: 300px;
   height: 500px;
 }
-main #naslov-servisi {
+header main #naslov-servisi {
   text-align: center;
 }
-main #naslov-projekat {
+header main #naslov-projekat {
   text-align: center;
   padding-bottom: 30px;
 }
-main .projects {
+header main .projects {
   background-color: rgb(77, 77, 77);
   width: 100%;
   display: flex;
   justify-content: space-evenly;
   padding-bottom: 200px;
 }
-main .projects #contact {
+header main .projects #contact {
   background-color: rgb(77, 77, 77);
   width: 50%;
 }
-main .projects #contact .formular {
+header main .projects #contact .formular {
   background-color: rgb(40, 40, 40);
   padding: 30px;
 }
-main .projects #contact .formular #forma form .forma-dugme {
+header main .projects #contact .formular #forma form .forma-dugme {
   text-align: center;
 }
-main .projects #contact .formular #forma form .forma-dugme #send {
+header main .projects #contact .formular #forma form .forma-dugme #send {
   cursor: pointer;
   background-color: whitesmoke;
   color: black;
@@ -183,61 +186,61 @@ main .projects #contact .formular #forma form .forma-dugme #send {
   opacity: 1;
   transition: 0.5s all ease-in-out;
 }
-main .projects #contact .formular #forma form .forma-dugme #send:hover {
+header main .projects #contact .formular #forma form .forma-dugme #send:hover {
   opacity: 0.7;
   background-color: transparent;
   transition: 0.5s all ease-in-out;
 }
-main .projects #contact .formular #forma form .forma-poruka textarea {
+header main .projects #contact .formular #forma form .forma-poruka textarea {
   border-radius: 10px;
   resize: none;
   background-color: #f9f7f7;
   color: black;
 }
-main .projects #contact .formular #forma form .imeprezime {
+header main .projects #contact .formular #forma form .imeprezime {
   margin: 20px;
 }
-main .projects #contact .formular #forma form .imeprezime #name {
+header main .projects #contact .formular #forma form .imeprezime #name {
   margin: 20px;
   margin-right: 200px;
 }
-main .projects #contact .formular #forma form .forma-mail #email {
+header main .projects #contact .formular #forma form .forma-mail #email {
   margin: 0 auto;
   display: grid;
 }
-main .projects .third .treca-slika-tekst {
+header main .projects .third .treca-slika-tekst {
   transition: 0.5s ease;
   opacity: 0;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   margin-left: 250px;
 }
-main .projects .third .treca-slika-tekst .treci-tekst p {
+header main .projects .third .treca-slika-tekst .treci-tekst p {
   color: white;
   font-size: 30px;
   text-align: center;
   margin-top: -150px;
 }
-main .projects .third:hover .image {
+header main .projects .third:hover .image {
   opacity: 0.3;
 }
-main .projects .third:hover .treca-slika-tekst {
+header main .projects .third:hover .treca-slika-tekst {
   opacity: 1;
 }
-main .projects .third img {
+header main .projects .third img {
   width: 500px;
   height: 300px;
   border-radius: 30px;
   border: 1px solid lime;
 }
-main .projects .third .image {
+header main .projects .third .image {
   opacity: 1;
   display: block;
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
-main .projects .second img {
+header main .projects .second img {
   width: 500px;
   height: 300px;
   border-radius: 30px;
@@ -245,92 +248,89 @@ main .projects .second img {
   margin-left: -150px;
   margin-right: 30px;
 }
-main .projects .second:hover .image {
+header main .projects .second:hover .image {
   opacity: 0.3;
 }
-main .projects .second:hover .druga-slika-tekst {
+header main .projects .second:hover .druga-slika-tekst {
   opacity: 1;
 }
-main .projects .second .druga-slika-tekst .drugi-tekst p {
+header main .projects .second .druga-slika-tekst .drugi-tekst p {
   color: white;
   font-size: 30px;
   text-align: center;
   margin-top: -170px;
   margin-left: -170px;
 }
-main .projects .second .image {
+header main .projects .second .image {
   opacity: 1;
   display: block;
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
-main .projects .first .image {
+header main .projects .first .image {
   opacity: 1;
   display: block;
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
 }
-main .projects .first img {
+header main .projects .first img {
   width: 500px;
   height: 300px;
   border-radius: 30px;
   border: 1px solid lime;
 }
-main .projects .first:hover .prva-slika-tekst {
+header main .projects .first:hover .prva-slika-tekst {
   opacity: 1;
 }
-main .projects .first:hover .image {
+header main .projects .first:hover .image {
   opacity: 0.3;
 }
-main .projects .first .prva-slika-tekst {
+header main .projects .first .prva-slika-tekst {
   transition: 0.5s ease;
   opacity: 0;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-main .projects .first .prva-slika-tekst .prvi-tekst p {
+header main .projects .first .prva-slika-tekst .prvi-tekst p {
   color: white;
   font-size: 30px;
   text-align: center;
   margin-top: -150px;
   margin-left: 500px;
 }
-main .skills {
+header main .skills {
   display: flex;
   align-items: baseline;
 }
-main .skills .blok {
+header main .skills .blok {
   border: 1px solid black;
   border-radius: 40px;
   text-align: center;
   padding: 10px;
   margin: 10px;
 }
-main .skills .blok i {
+header main .skills .blok i {
   font-size: 200px;
   color: black;
 }
-
-footer .futer {
+header footer .futer {
   width: 100%;
   background-color: rgb(57, 48, 48);
   text-align: center;
 }
-footer .futer i {
+header footer .futer i {
   font-size: 25px;
   padding: 5px 15px;
 }
-footer .futer i:hover {
+header footer .futer i:hover {
   color: gray;
 }
-
-#info {
+header #info {
   font-size: 30px;
 }
-
-input {
+header input {
   background-color: rgb(40, 40, 40);
   color: white;
   width: 300px;
@@ -339,16 +339,13 @@ input {
   border-left: none;
   text-align: center;
 }
-
-input::-moz-placeholder {
+header input::-moz-placeholder {
   font-size: 20px;
 }
-
-input::placeholder {
+header input::placeholder {
   font-size: 20px;
 }
-
-textarea {
+header textarea {
   padding: 20px;
   width: 100%;
   border-radius: 10px;
@@ -356,20 +353,18 @@ textarea {
   background-color: #f9f7f7;
   color: black;
 }
-
-.naslov-contact h2 {
+header .naslov-contact h2 {
   text-align: center;
 }
-
-.map {
+header .map {
   width: auto;
   padding: 0px;
 }
-.map .ispod-mape .telefon {
+header .map .ispod-mape .telefon {
   font-size: 30px;
   text-align: center;
 }
-.map .prvi-blok iframe {
+header .map .prvi-blok iframe {
   width: 500px;
   height: 350px;
   display: flex;
