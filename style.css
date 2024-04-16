@@ -1,0 +1,2107 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  background-color: #d9f6e5;
+  background: url(../slike/image.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+@font-face {
+  font-family: MojFont;
+  src: url("../font/fabada/Fabada-regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "MojFont", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color: #ffffff;
+}
+
+header .linija{
+  width: 100%; 
+  height: 100px;
+  color: aqua; 
+  z-index: 5; 
+  position: relative;
+}
+header .header-wrap {
+  background-image: linear-gradient(#00432a, #00432a, #00432a);
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 3px solid greenyellow;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+header .header-wrap .container {
+  display: flex;
+  justify-content: space-around;
+}
+header .header-wrap .container .image-wrap img {
+  width: 120px;
+  filter: brightness(0%) invert(100%) saturate(0%);
+}
+header .header-wrap .container .navigacija {
+  display: flex;
+  align-items: center;
+}
+header .header-wrap .container .navigacija ul {
+  display: flex;
+}
+header .header-wrap .container .navigacija ul li {
+  border-bottom: 3px solid;
+  font-size: 25px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: greenyellow;
+  list-style-type: none;
+}
+header .header-wrap .container .navigacija ul li:hover{
+  border-color: white;
+  transition: 0.5s all;
+}
+header .header-wrap .container .navigacija ul li a {
+  text-decoration: none;
+  transition: 0.5s all;
+}
+header .header-wrap .container .navigacija ul li a:hover {
+  /*color: crimson;*/
+}
+header .header-info{
+  margin: 0 auto;
+  width: 50%;
+}
+header .header-info h1 {
+  font-size: 4rem;
+  color: white;
+  width: fit-content;
+  padding: 20px 40px;
+  border-radius: 25px;
+  background-color: black;
+  margin-top: 100px;
+}
+header .header-info h2 span{
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 20px;
+  color: black;
+}
+header .header-info h2 {
+  font-size: 2rem;
+  font-style: oblique;
+  /*width: fit-content;*/
+  border-radius: 12px;
+  margin-top: 40px;
+  margin-right: 0px;
+  color: black;
+  text-align: right;
+}
+header .header-buttons {
+  text-align: center;
+}
+header .header-buttons input {
+  font-size: 25px;
+  border-radius: 10px;
+  border: 2px solid greenyellow;
+  margin: 20px;
+  margin-top: 100px;
+  background-color: rgba(0,0,0, 0.4);
+  font-weight: bolder;
+  width: 300px;
+  cursor: pointer;
+  transition: 0.5s all;
+  text-transform: uppercase;
+}
+header .header-buttons #prvabojadugme:hover {
+  background-color: black;
+}
+header .header-buttons #drugabojadugme {
+  color: white;
+}
+header .header-buttons #drugabojadugme:hover {
+  background-color: black;
+  color: white;
+}
+
+main {
+  margin-top: 220px;
+  width: 100%;
+  background-color: rgb(77, 77, 77);
+}
+main #linija {
+}
+main #kontant-naslov {
+  text-align: center;
+  font-size: 32px;
+  padding: 10px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+main #about {
+  margin-bottom: 20px;
+}
+main .around-main {
+  padding-bottom: 20px;
+  width: 100%;
+}
+main .around-main .main {
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  text-align: center;
+  height: 80%;
+}
+main .around-main .main .slika-tekst {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  width: 65%;
+  height: 90%;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+main .around-main .main .slika-tekst .aboutmetext {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+main .around-main .main .slika-tekst .aboutmehide h1{
+  display: none;
+}
+main .around-main .main .slika-tekst .slika2 {
+  border: 2px solid white;
+  background-color: rgb(28, 28, 28);
+  padding: 10px;
+  border-radius: 20px;
+}
+main .around-main .main .slika-tekst .slika2 img {
+  width: 300px;
+  height: 500px;
+  border: 2px solid white;
+  border-style: dashed;
+  border-radius: 20px;
+  padding: 13px;
+}
+main #naslov-servisi {
+  text-align: center;
+}
+main #naslov-projekat {
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: black;
+  padding-top: 90px;
+}
+main .projects {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+}
+main .projects .third img {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  border: 1px solid lime;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+main .projects .third .image {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+main .projects .third:hover .image {
+  opacity: 0.3;
+}
+main .projects .third:hover .treca-slika-tekst {
+  opacity: 1;
+}
+main .projects .third .treca-slika-tekst .treci-tekst p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+main .projects .third .treca-slika-tekst {
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: translate(0%, -400%);
+  -ms-transform: translate(0%, -400%);
+  margin-left: 0px;
+}
+main .projects .second img {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  border: 1px solid lime;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+main .projects .second .image {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+main .projects .second:hover .image {
+  opacity: 0.3;
+}
+main .projects .second:hover .druga-slika-tekst {
+  opacity: 1;
+}
+main .projects .second .druga-slika-tekst .drugi-tekst p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+main .projects .second .druga-slika-tekst {
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: translate(0%, -400%);
+  -ms-transform: translate(0%, -400%);
+  margin-left: 0px;
+}
+main .projects .first img {
+  width: 500px;
+  height: 300px;
+  border-radius: 30px;
+  border: 1px solid lime;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+main .projects .first .image {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+main .projects .first:hover .image {
+  opacity: 0.3;
+}
+main .projects .first:hover .prva-slika-tekst {
+  opacity: 1;
+}
+main .projects .first .prva-slika-tekst .prvi-tekst p {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+main .projects .first .prva-slika-tekst {
+  transition: 0.5s ease;
+  opacity: 0;
+  transform: translate(0%, -400%);
+  -ms-transform: translate(0%, -400%);
+  margin-left: 0px;
+}
+main #naslov-servisi {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+main .skills {
+  margin-top: 20px;
+  display: flex;
+  
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+main .skills .blok {
+  border: 1px solid black;
+  border-radius: 40px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 20%;
+  flex: 1;
+}
+main .skills .blok i {
+  font-size: 150px;
+  color: black;
+}
+
+.futer {
+  width: 100%;
+  background-image: linear-gradient(#00432a, #00432a, #00432a);
+  text-align: center;
+}
+.futer i {
+  font-size: 25px;
+  padding: 5px 15px;
+  margin-top: 10px;
+}
+.futer i:hover {
+  color: rgb(0, 0, 0);
+}
+
+#info {
+  font-size: 30px;
+}
+
+.futer p{
+  padding-bottom: 10px;
+}
+
+input {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  width: 300px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+}
+
+input::-moz-placeholder {
+  font-size: 20px;
+}
+
+input::placeholder {
+  font-size: 20px;
+}
+
+textarea {
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  resize: none;
+  background-color: #f9f7f7;
+  color: black;
+}
+
+.naslov-contact h2 {
+  text-align: center;
+}
+
+.map {
+  width: auto;
+  padding: 0px;
+}
+.map .ispod-mape .telefon {
+  font-size: 30px;
+  text-align: center;
+}
+.map .prvi-blok iframe {
+  width: 500px;
+  height: 350px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */
+main .kontakt{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 150px;
+}
+
+main .kontakt #contact {
+  background-color: rgb(77, 77, 77);
+  width: 50%;
+}
+main .kontakt #contact .formular {
+  background-color: rgb(40, 40, 40);
+  padding: 30px;
+  border-radius: 20px;
+}
+main .kontakt #contact .formular #forma form .forma-dugme {
+  text-align: center;
+}
+main .kontakt #contact .formular #forma form .forma-dugme #send {
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: black;
+  font-size: 20px;
+  border-radius: 20px;
+  opacity: 1;
+  transition: 0.5s all ease-in-out;
+  margin-top: 30px;
+}
+main .kontakt #contact .formular #forma form .forma-dugme #send:hover {
+  opacity: 0.8;
+  background-color: transparent;
+  transition: 0.5s all ease-in-out;
+  color: white;
+}
+main .kontakt #contact .formular #forma form .forma-poruka textarea {
+  border-radius: 10px;
+  resize: none;
+  background-color: #f9f7f7;
+  color: black;
+  outline-style: none;
+}
+main .kontakt #contact .formular #forma form .imeprezime {
+  margin: 20px;
+  outline-style: none;
+}
+main .kontakt #contact .formular #forma form .imeprezime #name {
+  margin: 20px;
+  margin-right: 200px;
+  outline-style: none;
+}
+main .kontakt #contact .formular #forma form .imeprezime #lastname {
+  outline-style: none;
+}
+main .kontakt #contact .formular #forma form .forma-mail #email {
+  margin: 0 auto;
+  display: grid;
+  margin-bottom: 40px;
+  outline-style: none;
+}
+/***********************************1440****************************/
+@media screen and (max-width: 1440px) {
+	header {
+		margin-bottom: 50px;
+	}
+	header .header-wrap{
+		width: 100%;
+	}
+	header .header-wrap .container {
+		flex-direction: column;
+	}
+	header .header-wrap .container .image-wrap {
+		text-align: center;
+	}
+	header .header-wrap .container .navigacija ul {
+		margin: 0 auto 20px auto;
+	}
+	header .header-wrap .container .navigacija ul li {
+		font-size: 25px;
+    	margin: 0px 30px;
+	}
+	header .header-info{
+		width: 100%;
+		text-align: center;
+	}
+	header .header-info h1{
+		font-size: 40px;
+		margin-left: 0px;
+		width: 50%;
+    	margin: 0 auto;
+    	text-align: center;
+		padding: 20px 0px;
+	}
+	header .header-info h2{
+		margin-left: 0px;
+		text-align: center;
+		font-size: 20px;
+	}
+	header .header-buttons input {
+		font-size: 15px;
+		width: 20%;
+	}
+	header .header-buttons #prvabojadugme {
+		margin: 100px 0px 0px 0px;
+	}
+	header .header-buttons #drugabojadugme {
+		margin: 20px 0px 0px 0px;
+	}
+	
+	
+/** O MENI **/
+	
+	
+	main {
+		margin-top: 0px;
+	}
+	main .around-main .main {
+		margin-top: 0px;
+	}
+	main .around-main .main .slika-tekst {
+		flex-direction: column;
+		padding-top: 50px;
+		margin-top: 0px;
+		width: 75%;
+		padding-bottom: 50px;
+	}
+	main .around-main .main .slika-tekst .aboutmehide h1{
+		display: block;
+	}
+	main .around-main .main .slika-tekst .aboutmetext {
+		margin: 0px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext h1{
+		display: none;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p{
+		margin-top: 30px;
+		font-size: 18px;
+	}
+	#info {
+		font-size: 20px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p .novi-red{
+		display: block;
+	}
+	
+	
+/** SERVISI **/
+	
+	
+	main #naslov-servisi {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	main .skills {
+		margin-top: 20px;
+		display: flex;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	main .skills .blok{
+		width: 80%;
+		margin: 20px 10px;
+	}
+	main .skills .blok i {
+		font-size: 150px;
+	}
+	
+	
+/** PROJEKTI **/
+	
+	
+	main #naslov-projekat {
+		padding-top: 30px;
+	}
+	main .projects{
+		padding-bottom: 30px;
+		width: 100%;
+		padding: 0px 20px 30px 20px;
+	}
+	main .projects .first{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .first img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .first .prva-slika-tekst .prvi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .first .prva-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -700%);
+		-ms-transform: translate(0%, -700%);
+		margin-left: 0px;
+	}
+	main .projects .second{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	main .projects .second img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .second .druga-slika-tekst .drugi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .second .druga-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -700%);
+		-ms-transform: translate(0%, -700%);
+		margin-left: 0px;
+	}
+	main .projects .third{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .third img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .third .treca-slika-tekst .treci-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .third .treca-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -700%);
+		-ms-transform: translate(0%, -700%);
+		margin-left: 0px;
+	}
+	
+	
+/** KONTAKT **/
+	
+	
+	main .projects #contact .formular #forma form .forma-mail input{
+		width: auto;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme input{
+		width: 20px;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme #send{
+		width: 150px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+	}
+	main .kontakt #contact .formular #forma form .forma-poruka textarea {
+		width: 80%;
+	}
+	main .kontakt #contact .formular #forma form input{
+		width: 50%;
+		padding: 10px 0px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime #name{
+		margin: 0px;
+	}
+	main .kontakt {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	main #kontant-naslov {
+		margin: 30px 0px 10px 0px;
+	}
+	main .kontakt #contact {
+		margin: 0 auto;
+		width: 80%;
+		padding-bottom: 30px;
+	}
+	main .kontakt #contact .formular{
+		padding: 10px 0px 30px 0px;
+	}
+	main .kontakt #contact .formular #forma {
+		text-align: center;
+	}
+	.map .prvi-blok iframe {
+		width: 80%;
+		height: 300px;
+		display: flex;
+		margin: 0 auto;
+		border-radius: 10px;
+	}
+	main .kontakt .map .ispod-mape .telefon {
+		font-size: 15px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+
+/** FUTER **/
+
+
+	.futer i {
+		font-size: 15px;
+		padding: 5px 15px;
+		margin-top: 10px;
+	}
+	.futer p {
+		font-size: 10px;
+		font-weight: bolder;
+	}
+}
+
+/***********************************1024****************************/
+@media screen and (max-width: 1024px) {
+	header {
+		margin-bottom: 50px;
+	}
+	header .header-wrap{
+		width: 100%;
+	}
+	header .header-wrap .container {
+		flex-direction: column;
+	}
+	header .header-wrap .container .image-wrap {
+		text-align: center;
+	}
+	header .header-wrap .container .navigacija ul {
+		margin: 0 auto 20px auto;
+	}
+	header .header-wrap .container .navigacija ul li {
+		font-size: 25px;
+    margin: 0px 30px;
+	}
+	header .header-info{
+		width: 100%;
+		text-align: center;
+	}
+	header .header-info h1{
+		font-size: 40px;
+		margin-left: 0px;
+		width: 80%;
+    	margin: 0 auto;
+    	text-align: center;
+		padding: 20px 0px;
+	}
+	header .header-info h2{
+		margin-left: 0px;
+		text-align: center;
+		font-size: 20px;
+	}
+	header .header-buttons input {
+		font-size: 15px;
+		width: 50%;
+	}
+	header .header-buttons #prvabojadugme {
+		margin: 100px 0px 0px 0px;
+	}
+	header .header-buttons #drugabojadugme {
+		margin: 20px 0px 0px 0px;
+	}
+	
+	
+/** O MENI **/
+	
+	
+	main {
+		margin-top: 0px;
+	}
+	main .around-main .main {
+		margin-top: 0px;
+	}
+	main .around-main .main .slika-tekst {
+		flex-direction: column;
+		padding-top: 50px;
+		margin-top: 0px;
+		width: 75%;
+		padding-bottom: 50px;
+	}
+	main .around-main .main .slika-tekst .aboutmehide h1{
+		display: block;
+	}
+	main .around-main .main .slika-tekst .aboutmetext {
+		margin: 0px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext h1{
+		display: none;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p{
+		margin-top: 30px;
+		font-size: 18px;
+	}
+	#info {
+		font-size: 20px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p .novi-red{
+		display: block;
+	}
+	
+	
+/** SERVISI **/
+	
+	
+	main #naslov-servisi {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	main .skills {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	main .skills .blok{
+		width: 80%;
+		margin: 20px auto;
+	}
+	main .skills .blok i {
+		font-size: 150px;
+	}
+	
+	
+/** PROJEKTI **/
+	
+	
+	main #naslov-projekat {
+		padding-top: 30px;
+	}
+	main .projects{
+		padding-bottom: 30px;
+		flex-direction: column;
+		width: 100%;
+	}
+	main .projects .first{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .first img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .first .prva-slika-tekst .prvi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .first .prva-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -1300%);
+		-ms-transform: translate(0%, -1300%);
+		margin-left: 0px;
+	}
+	main .projects .second{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .second img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .second .druga-slika-tekst .drugi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .second .druga-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -1300%);
+		-ms-transform: translate(0%, -1300%);
+		margin-left: 0px;
+	}
+	main .projects .third{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .third img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .third .treca-slika-tekst .treci-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .third .treca-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -1300%);
+		-ms-transform: translate(0%, -1300%);
+		margin-left: 0px;
+	}
+	
+	
+/** KONTAKT **/
+	
+	
+	main .projects #contact .formular #forma form .forma-mail input{
+		width: auto;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme input{
+		width: 20px;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme #send{
+		width: 150px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+	}
+	main .kontakt #contact .formular #forma form .forma-poruka textarea {
+		width: 80%;
+	}
+	main .kontakt #contact .formular #forma form input{
+		width: 50%;
+		padding: 10px 0px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime #name{
+		margin: 0px;
+	}
+	main .kontakt {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	main #kontant-naslov {
+		margin: 30px 0px 10px 0px;
+	}
+	main .kontakt #contact {
+		margin: 0 auto;
+		width: 80%;
+		padding-bottom: 30px;
+	}
+	main .kontakt #contact .formular{
+		padding: 10px 0px 30px 0px;
+	}
+	main .kontakt #contact .formular #forma {
+		text-align: center;
+	}
+	.map .prvi-blok iframe {
+		width: 80%;
+		height: 300px;
+		display: flex;
+		margin: 0 auto;
+		border-radius: 10px;
+	}
+	main .kontakt .map .ispod-mape .telefon {
+		font-size: 15px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+
+/** FUTER **/
+
+
+	.futer i {
+		font-size: 15px;
+		padding: 5px 15px;
+		margin-top: 10px;
+	}
+	.futer p {
+		font-size: 10px;
+		font-weight: bolder;
+	}
+}
+
+/***********************************768****************************/
+@media screen and (max-width: 768px) {
+	header {
+		margin-bottom: 50px;
+	}
+	header .header-wrap{
+		width: 100%;
+	}
+	header .header-wrap .container {
+		flex-direction: column;
+	}
+	header .header-wrap .container .image-wrap {
+		text-align: center;
+	}
+	header .header-wrap .container .navigacija ul {
+		margin: 0 auto 20px auto;
+	}
+	header .header-wrap .container .navigacija ul li {
+		font-size: 25px;
+    	margin: 0px 20px;
+	}
+	header .header-info{
+		width: 100%;
+		text-align: center;
+	}
+	header .header-info h1{
+		font-size: 40px;
+		margin-left: 0px;
+		width: 80%;
+    	margin: 0 auto;
+    	text-align: center;
+		padding: 20px 0px;
+	}
+	header .header-info h2{
+		margin-left: 0px;
+		text-align: center;
+		font-size: 20px;
+	}
+	header .header-buttons input {
+		font-size: 15px;
+		width: 30%;
+	}
+	header .header-buttons #prvabojadugme {
+		margin: 100px 0px 0px 0px;
+	}
+	header .header-buttons #drugabojadugme {
+		margin: 20px 0px 0px 0px;
+	}
+	
+	
+/** O MENI **/
+	
+	
+	main {
+		margin-top: 0px;
+	}
+	main .around-main .main {
+		margin-top: 0px;
+	}
+	main .around-main .main .slika-tekst {
+		flex-direction: column;
+		padding-top: 50px;
+		margin-top: 0px;
+		width: 75%;
+		padding-bottom: 50px;
+	}
+	main .around-main .main .slika-tekst .aboutmehide h1{
+		display: block;
+	}
+	main .around-main .main .slika-tekst .aboutmetext {
+		margin: 0px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext h1{
+		display: none;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p{
+		margin-top: 30px;
+		font-size: 18px;
+	}
+	#info {
+		font-size: 20px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p .novi-red{
+		display: block;
+	}
+	
+	
+/** SERVISI **/
+	
+	
+	main #naslov-servisi {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	main .skills {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	main .skills .blok{
+		width: 80%;
+		margin: 20px auto;
+	}
+	main .skills .blok i {
+		font-size: 150px;
+	}
+	
+	
+/** PROJEKTI **/
+	
+	
+	main #naslov-projekat {
+		padding-top: 30px;
+	}
+	main .projects{
+		padding-bottom: 30px;
+		flex-direction: column;
+		width: 100%;
+	}
+	main .projects .first{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .first img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .first .prva-slika-tekst .prvi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .first .prva-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -900%);
+		-ms-transform: translate(0%, -900%);
+		margin-left: 0px;
+	}
+	main .projects .second{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .second img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .second .druga-slika-tekst .drugi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .second .druga-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -900%);
+		-ms-transform: translate(0%, -900%);
+		margin-left: 0px;
+	}
+	main .projects .third{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .third img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .third .treca-slika-tekst .treci-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .third .treca-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -900%);
+		-ms-transform: translate(0%, -900%);
+		margin-left: 0px;
+	}
+	
+	
+/** KONTAKT **/
+	
+	
+	main .projects #contact .formular #forma form .forma-mail input{
+		width: auto;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme input{
+		width: 20px;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme #send{
+		width: 150px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+	}
+	main .kontakt #contact .formular #forma form .forma-poruka textarea {
+		width: 80%;
+	}
+	main .kontakt #contact .formular #forma form input{
+		width: 50%;
+		padding: 10px 0px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime #name{
+		margin: 0px;
+	}
+	main .kontakt {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	main #kontant-naslov {
+		margin: 30px 0px 10px 0px;
+	}
+	main .kontakt #contact {
+		margin: 0 auto;
+		width: 80%;
+		padding-bottom: 30px;
+	}
+	main .kontakt #contact .formular{
+		padding: 10px 0px 30px 0px;
+	}
+	main .kontakt #contact .formular #forma {
+		text-align: center;
+	}
+	.map .prvi-blok iframe {
+		width: 80%;
+		height: 300px;
+		display: flex;
+		margin: 0 auto;
+		border-radius: 10px;
+	}
+	main .kontakt .map .ispod-mape .telefon {
+		font-size: 15px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+
+/** FUTER **/
+
+
+	.futer i {
+		font-size: 15px;
+		padding: 5px 15px;
+		margin-top: 10px;
+	}
+	.futer p {
+		font-size: 10px;
+		font-weight: bolder;
+	}
+}
+
+/***********************************425****************************/
+@media screen and (max-width: 425px) {
+	header {
+		margin-bottom: 50px;
+	}
+	header .header-wrap{
+		width: 100%;
+	}
+	header .header-wrap .container {
+		flex-direction: column;
+	}
+	header .header-wrap .container .image-wrap {
+		text-align: center;
+	}
+	header .header-wrap .container .navigacija ul {
+		margin: 0 auto 20px auto;
+	}
+	header .header-wrap .container .navigacija ul li {
+		font-size: 15px;
+    margin: 0px 10px;
+	}
+	header .header-info{
+		width: 100%;
+		text-align: center;
+	}
+	header .header-info h1{
+		font-size: 40px;
+		margin-left: 0px;
+		width: 80%;
+    	margin: 0 auto;
+    	text-align: center;
+		padding: 20px 0px;
+	}
+	header .header-info h2{
+		margin-left: 0px;
+		text-align: center;
+		font-size: 20px;
+	}
+	header .header-buttons input {
+		font-size: 15px;
+		width: 50%;
+	}
+	header .header-buttons #prvabojadugme {
+		margin: 100px 0px 0px 0px;
+	}
+	header .header-buttons #drugabojadugme {
+		margin: 20px 0px 0px 0px;
+	}
+	
+	
+/** O MENI **/
+	
+	
+	main {
+		margin-top: 0px;
+	}
+	main .around-main .main {
+		margin-top: 0px;
+	}
+	main .around-main .main .slika-tekst {
+		flex-direction: column;
+		padding-top: 50px;
+		margin-top: 0px;
+		width: 75%;
+		padding-bottom: 50px;
+	}
+	main .around-main .main .slika-tekst .aboutmehide h1{
+		display: block;
+	}
+	main .around-main .main .slika-tekst .aboutmetext {
+		margin: 0px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext h1{
+		display: none;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p{
+		margin-top: 30px;
+		font-size: 18px;
+	}
+	#info {
+		font-size: 20px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p .novi-red{
+		display: block;
+	}
+	
+	
+/** SERVISI **/
+	
+	
+	main #naslov-servisi {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	main .skills {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	main .skills .blok{
+		width: 80%;
+		margin: 20px auto;
+	}
+	main .skills .blok i {
+		font-size: 150px;
+	}
+	
+	
+/** PROJEKTI **/
+	
+	
+	main #naslov-projekat {
+		padding-top: 30px;
+	}
+	main .projects{
+		padding-bottom: 30px;
+		flex-direction: column;
+		width: 100%;
+	}
+	main .projects .first{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .first img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .first .prva-slika-tekst .prvi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .first .prva-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -500%);
+		-ms-transform: translate(0%, -500%);
+		margin-left: 0px;
+	}
+	main .projects .second{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .second img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .second .druga-slika-tekst .drugi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .second .druga-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -500%);
+		-ms-transform: translate(0%, -500%);
+		margin-left: 0px;
+	}
+	main .projects .third{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .third img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .third .treca-slika-tekst .treci-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .third .treca-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -500%);
+		-ms-transform: translate(0%, -500%);
+		margin-left: 0px;
+	}
+	
+	
+/** KONTAKT **/
+	
+	
+	main .projects #contact .formular #forma form .forma-mail input{
+		width: auto;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme input{
+		width: 20px;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme #send{
+		width: 150px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+	}
+	main .kontakt #contact .formular #forma form .forma-poruka textarea {
+		width: 80%;
+	}
+	main .kontakt #contact .formular #forma form input{
+		width: 50%;
+		padding: 10px 0px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime #name{
+		margin: 0px;
+	}
+	main .kontakt {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	main #kontant-naslov {
+		margin: 30px 0px 10px 0px;
+	}
+	main .kontakt #contact {
+		margin: 0 auto;
+		width: 80%;
+		padding-bottom: 30px;
+	}
+	main .kontakt #contact .formular{
+		padding: 10px 0px 30px 0px;
+	}
+	main .kontakt #contact .formular #forma {
+		text-align: center;
+	}
+	.map .prvi-blok iframe {
+		width: 80%;
+		height: 300px;
+		display: flex;
+		margin: 0 auto;
+		border-radius: 10px;
+	}
+	main .kontakt .map .ispod-mape .telefon {
+		font-size: 15px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+
+/** FUTER **/
+
+
+	.futer i {
+		font-size: 15px;
+		padding: 5px 15px;
+		margin-top: 10px;
+	}
+	.futer p {
+		font-size: 10px;
+		font-weight: bolder;
+	}
+}
+
+/***********************************375****************************/
+@media screen and (max-width: 375px) {
+	header {
+		margin-bottom: 50px;
+	}
+	header .header-wrap{
+		width: 100%;
+	}
+	header .header-wrap .container {
+		flex-direction: column;
+	}
+	header .header-wrap .container .image-wrap {
+		text-align: center;
+	}
+	header .header-wrap .container .navigacija ul {
+		margin: 0 auto 20px auto;
+	}
+	header .header-wrap .container .navigacija ul li {
+		font-size: 15px;
+    margin: 0px 5px;
+	}
+	header .header-info{
+		width: 100%;
+		text-align: center;
+	}
+	header .header-info h1{
+		font-size: 40px;
+		margin-left: 0px;
+		width: 80%;
+    	margin: 0 auto;
+    	text-align: center;
+		padding: 20px 0px;
+	}
+	header .header-info h2{
+		margin-left: 0px;
+		text-align: center;
+		font-size: 20px;
+	}
+	header .header-buttons input {
+		font-size: 15px;
+		width: 50%;
+	}
+	header .header-buttons #prvabojadugme {
+		margin: 100px 0px 0px 0px;
+	}
+	header .header-buttons #drugabojadugme {
+		margin: 20px 0px 0px 0px;
+	}
+	
+	
+/** O MENI **/
+	
+	
+	main {
+		margin-top: 0px;
+	}
+	main .around-main .main {
+		margin-top: 0px;
+	}
+	main .around-main .main .slika-tekst {
+		flex-direction: column;
+		padding-top: 50px;
+		margin-top: 0px;
+		width: 75%;
+		padding-bottom: 50px;
+	}
+	main .around-main .main .slika-tekst .aboutmehide h1{
+		display: block;
+	}
+	main .around-main .main .slika-tekst .aboutmetext {
+		margin: 0px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext h1{
+		display: none;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p{
+		margin-top: 30px;
+		font-size: 18px;
+	}
+	#info {
+		font-size: 20px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p .novi-red{
+		display: block;
+	}
+	
+	
+/** SERVISI **/
+	
+	
+	main #naslov-servisi {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	main .skills {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	main .skills .blok{
+		width: 80%;
+		margin: 20px auto;
+	}
+	main .skills .blok i {
+		font-size: 150px;
+	}
+	
+	
+/** PROJEKTI **/
+	
+	
+	main #naslov-projekat {
+		padding-top: 30px;
+	}
+	main .projects{
+		padding-bottom: 30px;
+		flex-direction: column;
+		width: 100%;
+	}
+	main .projects .first{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .first img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .first .prva-slika-tekst .prvi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .first .prva-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -450%);
+		-ms-transform: translate(0%, -450%);
+		margin-left: 0px;
+	}
+	main .projects .second{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .second img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .second .druga-slika-tekst .drugi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .second .druga-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -450%);
+		-ms-transform: translate(0%, -450%);
+		margin-left: 0px;
+	}
+	main .projects .third{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .third img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .third .treca-slika-tekst .treci-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .third .treca-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -450%);
+		-ms-transform: translate(0%, -450%);
+		margin-left: 0px;
+	}
+	
+	
+/** KONTAKT **/
+	
+	
+	main .projects #contact .formular #forma form .forma-mail input{
+		width: auto;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme input{
+		width: 20px;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme #send{
+		width: 150px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+	}
+	main .kontakt #contact .formular #forma form .forma-poruka textarea {
+		width: 80%;
+	}
+	main .kontakt #contact .formular #forma form input{
+		width: 50%;
+		padding: 10px 0px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime #name{
+		margin: 0px;
+	}
+	main .kontakt {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	main #kontant-naslov {
+		margin: 30px 0px 10px 0px;
+	}
+	main .kontakt #contact {
+		margin: 0 auto;
+		width: 80%;
+		padding-bottom: 30px;
+	}
+	main .kontakt #contact .formular{
+		padding: 10px 0px 30px 0px;
+	}
+	main .kontakt #contact .formular #forma {
+		text-align: center;
+	}
+	.map .prvi-blok iframe {
+		width: 80%;
+		height: 300px;
+		display: flex;
+		margin: 0 auto;
+		border-radius: 10px;
+	}
+	main .kontakt .map .ispod-mape .telefon {
+		font-size: 15px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+
+/** FUTER **/
+
+
+	.futer i {
+		font-size: 15px;
+		padding: 5px 15px;
+		margin-top: 10px;
+	}
+	.futer p {
+		font-size: 10px;
+		font-weight: bolder;
+	}
+}
+/***********************************320****************************/
+@media screen and (max-width: 320px) {
+	header {
+		margin-bottom: 50px;
+	}
+	header .header-wrap{
+		width: 100%;
+	}
+	header .header-wrap .container {
+		flex-direction: column;
+	}
+	header .header-wrap .container .image-wrap {
+		text-align: center;
+	}
+	header .header-wrap .container .navigacija ul {
+		margin: 0 auto 20px auto;
+    	flex-direction: column;
+		text-align: center;
+	}
+	header .header-wrap .container .navigacija ul li {
+		font-size: 25px;
+    margin: 0px 5px;
+	}
+	header .header-info{
+		width: 100%;
+		text-align: center;
+	}
+	header .header-info h1{
+		font-size: 40px;
+		margin-left: 0px;
+		width: 80%;
+    	margin: 0 auto;
+    	text-align: center;
+		padding: 20px 0px;
+	}
+	header .header-info h2{
+		margin-left: 0px;
+		text-align: center;
+		font-size: 20px;
+	}
+	header .header-buttons input {
+		font-size: 15px;
+		width: 50%;
+	}
+	header .header-buttons #prvabojadugme {
+		margin: 100px 0px 0px 0px;
+	}
+	header .header-buttons #drugabojadugme {
+		margin: 20px 0px 0px 0px;
+	}
+	
+	
+/** O MENI **/
+	
+	
+	main {
+		margin-top: 0px;
+	}
+	main .around-main .main {
+		margin-top: 0px;
+	}
+	main .around-main .main .slika-tekst {
+		flex-direction: column;
+		padding-top: 50px;
+		margin-top: 0px;
+		width: 75%;
+		padding-bottom: 50px;
+	}
+  main .around-main .main .slika-tekst .slika2 img{
+    width: auto;
+  }
+	main .around-main .main .slika-tekst .aboutmehide h1{
+		display: block;
+	}
+	main .around-main .main .slika-tekst .aboutmetext {
+		margin: 0px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext h1{
+		display: none;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p{
+		margin-top: 30px;
+		font-size: 18px;
+	}
+	#info {
+		font-size: 20px;
+	}
+	main .around-main .main .slika-tekst .aboutmetext p .novi-red{
+		display: block;
+	}
+	
+	
+/** SERVISI **/
+	
+	
+	main #naslov-servisi {
+		margin-top: 10px;
+		margin-bottom: 0px;
+	}
+	main .skills {
+		margin-top: 20px;
+		display: flex;
+		flex-direction: column;
+		align-items: baseline;
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	main .skills .blok{
+		width: 80%;
+		margin: 20px auto;
+	}
+	main .skills .blok i {
+		font-size: 150px;
+	}
+	
+	
+/** PROJEKTI **/
+	
+	
+	main #naslov-projekat {
+		padding-top: 30px;
+	}
+	main .projects{
+		padding-bottom: 30px;
+		flex-direction: column;
+		width: 100%;
+	}
+	main .projects .first{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .first img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .first .prva-slika-tekst .prvi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .first .prva-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -450%);
+		-ms-transform: translate(0%, -450%);
+		margin-left: 0px;
+	}
+	main .projects .second{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .second img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .second .druga-slika-tekst .drugi-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .second .druga-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -450%);
+		-ms-transform: translate(0%, -450%);
+		margin-left: 0px;
+	}
+	main .projects .third{
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+	}
+	main .projects .third img {
+		margin-top: 0px;
+		width: 100%;
+		height: auto;
+	}
+	main .projects .third .treca-slika-tekst .treci-tekst p {
+		color: white;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+	main .projects .third .treca-slika-tekst {
+		transition: 0.5s ease;
+		opacity: 0;
+		transform: translate(0%, -450%);
+		-ms-transform: translate(0%, -450%);
+		margin-left: 0px;
+	}
+	
+	
+/** KONTAKT **/
+	
+	
+	main .projects #contact .formular #forma form .forma-mail input{
+		width: auto;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme input{
+		width: 20px;
+		margin-right: 0;
+	}
+	main .kontakt #contact .formular #forma form .forma-dugme #send{
+		width: 150px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0px;
+	}
+	main .kontakt #contact .formular #forma form .forma-poruka textarea {
+		width: 80%;
+	}
+	main .kontakt #contact .formular #forma form input{
+		width: 50%;
+		padding: 10px 0px;
+	}
+	main .kontakt #contact .formular #forma form .imeprezime #name{
+		margin: 0px;
+	}
+	main .kontakt {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+	main #kontant-naslov {
+		margin: 30px 0px 10px 0px;
+	}
+	main .kontakt #contact {
+		margin: 0 auto;
+		width: 80%;
+		padding-bottom: 30px;
+	}
+	main .kontakt #contact .formular{
+		padding: 10px 0px 30px 0px;
+	}
+	main .kontakt #contact .formular #forma {
+		text-align: center;
+	}
+	.map .prvi-blok iframe {
+		width: 80%;
+		height: 300px;
+		display: flex;
+		margin: 0 auto;
+		border-radius: 10px;
+	}
+	main .kontakt .map .ispod-mape .telefon {
+		font-size: 15px;
+		text-align: center;
+		margin-top: 10px;
+	}
+
+
+/** FUTER **/
+
+
+	.futer i {
+		font-size: 15px;
+		padding: 5px 15px;
+		margin-top: 10px;
+	}
+	.futer p {
+		font-size: 10px;
+		font-weight: bolder;
+	}
+}

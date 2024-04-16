@@ -13,6 +13,7 @@
 		<script src="https://kit.fontawesome.com/9343e2a586.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
+		
 		<header>
 			<div class="header-wrap">
 				<div class="container">
@@ -22,42 +23,48 @@
 					<nav class="navigacija">
 						<ul>
 							<li><a href="index.html">Home</a></li>
-							<li><a href="#about">About</a></li>
-							<li><a href="#naslov-servisi">Services</a></li>
+							<li><a href="#about2">About</a></li>
+							<li><a href="#servisi">Service</a></li>
 							<li><a href="#naslov-projekat">Projects</a></li>
 							<li><a href="#contact">Contant</a></li>
 						</ul>
 					</nav>
 				</div>
 			</div>
+			<div class="linija"></div>
 			<div class="header-info">
 				<h1>Nemanja Cvetinović</h1>
-				<h2>Web Designer</h2>
+				<h2><span>Web Designer</span></h2>
 			</div>
 			<div class="header-buttons">
 				<a href="#naslov-servisi"><input type="button" id="prvabojadugme" value="Services"/></a>
 				<a href="#contact"><input type="button" id="drugabojadugme" value="Contact"/></a>
 			</div>
 		</header>
+		
 		<main>
 			<div class="around-main">
 				<div class="main">
-					<h1 id="about">About me</h1>
-					<div class="slika-tekst">
+					<div class="slika-tekst" id="about2">
+						<div class="aboutmehide">
+							<h1 id="about">About me</h1>
+						</div>
 						<div class="slika2">
 							<img src="slike/slikaa.jpg">
 						</div>
 						<div class="aboutmetext">
+							<h1 id="about">About me</h1>
 							<p>Hello! I'm Nemanja and my job is all about web development and design. As a web designer, I believe that the intersection of creativity and functionality is where true magic happens. But beyond just creating visually appealing designs, I am dedicated to understanding the needs and goals of my clients and their audiences.</p>
-							<p id="info"><strong>Name:</strong> Nemanja Cvetinović</p>
-							<p id="info"><strong>Phone:</strong><a href="tel:+381612086178">+381 61 208 6178</a></p>
+							<p id="info"><strong>Name:</strong><span class="novi-red"> Nemanja Cvetinović</span></p>
+							<p id="info"><strong>Phone:</strong><a href="tel:+381612086178"><span class="novi-red">+381 61 208 6178</span></a></p>
 							<p id="info"><strong>Age:</strong> 19</p>
 							<p id="info"><strong>College:</strong> ICT</p>
-							<p id="info"><strong>Experience:</strong> 3+ years</p>
+							<p id="info"><strong><span class="novi-red">Experience:</span></strong> 3+ years</p>
 						</div>
 				</div>
 			</div>
 		</div>
+		<div id="servisi"></div>
 		<div id="naslov-servisi">
 			<h1>Services</h1>	
 		</div>
@@ -80,7 +87,7 @@
 			</div>
 			<div class="blok">
 				<i class="fab fa-sass"></i>
-				<p>Sass, which stands for Syntactically Awesome Stylesheets, extends the capabilities of traditional CSS by introducing features like variables, nesting, mixins, and more. With Sass, developers can write cleaner, more modular, and more maintainable stylesheets, making the process of styling web pages faster and easier</p>
+				<p>Sass, which stands for Syntactically Awesome Stylesheets, extends the capabilities of traditional CSS by introducing features like variables, nesting, mixins, and more. With Sass, developers can write cleaner, more modular, and more maintainable stylesheets, making the process of styling web pages faster and easier.</p>
 			</div>
 		</div>
 		<hr id="linija"/>
@@ -97,7 +104,7 @@
 				</div>
 			</div>
 			<div class="second">
-				<img src="slike/projekat2.webp" alt="drugi projekat" class="image"/>
+				<img src="slike/projekat2.png" alt="drugi projekat" class="image"/>
 				<div class="druga-slika-tekst">
 					<div class="drugi-tekst">
 						<p>HTML | CSS | BOOTSTRAP</p>
@@ -115,7 +122,7 @@
 		</div>
 		<hr id="linija"/>
 		<h2 id="kontant-naslov">Contact</h2>
-		<div class="projects">
+		<div class="kontakt">
 			<div id="contact">
 				<div class="naslov-contact">
 				</div>
@@ -141,7 +148,7 @@
 			</div>
 			<div class="map">
 				<div class="prvi-blok">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1682.9388364808615!2d20.484675009810044!3d44.814342807053364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwIElDVCDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1709074838544!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1682.9388364808615!2d20.484675009810044!3d44.814342807053364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwIElDVCDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1709074838544!5m2!1ssr!2srs" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 				<div class="ispod-mape">
 					<div class="telefon">
@@ -165,7 +172,7 @@
 			<a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
 			<a href="sitemap.xml" target="_blank"><i class="fa fa-sitemap"></i></a>
 			<a href="sass/style.scss" target="_blank"><i class="fab fa-sass"></i></a>
-			<p>&copy;2024 Nemanja Cvetinović. All rights reserved</p>
+			<p>&copy;2024 Nemanja Cvetinović.<br>All rights reserved</p>
 		</footer>
 	</body>
 </html>
